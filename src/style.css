@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.vue-flow__node {
+  border-radius: 8px;
+  border: 2px solid #1a192b;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vue-flow__node.selected {
+  border-color: #409eff;
+  box-shadow: 0 0 0 2px rgba(64, 158, 255, 0.2);
+}
+
+.vue-flow__edge-path {
+  stroke: #409eff;
+  stroke-width: 2;
+}
+
+.vue-flow__edge.selected .vue-flow__edge-path {
+  stroke: #67c23a;
+  stroke-width: 3;
+}
+
+.vue-flow__edge:hover .vue-flow__edge-path {
+  stroke: #67c23a;
+}
+
+/* 连接线样式 */
+.vue-flow__connection-path {
+  stroke: #409eff;
+  stroke-width: 2;
+}
+
+/* 连接点样式 */
+.vue-flow__handle {
+  width: 10px;
+  height: 10px;
+  background: #409eff;
+  border: 2px solid white;
+}
+
+.vue-flow__handle:hover {
+  background: #67c23a;
+}
+
+/* 边的删除按钮 */
+.vue-flow__edge-textbg {
+  fill: white;
+}
+
+.vue-flow__edge-text {
+  fill: #333;
+  font-size: 12px;
+}
+

@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
-  publicPath: './',
+  publicPath: './dist/',
   plugins: [vue()],
   resolve: {
     alias: {
